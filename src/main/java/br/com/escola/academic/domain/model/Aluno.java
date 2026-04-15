@@ -1,0 +1,20 @@
+package br.com.escola.academic.domain.model;
+
+
+import java.util.UUID;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class Aluno {
+
+    private UUID id;
+ 
+}
