@@ -1,0 +1,112 @@
+C:\Projeto\git\academic-service
+|   .classpath
+|   .factorypath
+|   .gitattributes
+|   .gitignore
+|   .project
+|   estrutura.txt
+|   mvnw
+|   mvnw.cmd
+|   pom.xml
+|   README.md
+|   
++---.mvn
+|   \---wrapper
+|           maven-wrapper.properties
+|           
++---.settings
+|       org.eclipse.core.resources.prefs
+|       org.eclipse.jdt.apt.core.prefs
+|       org.eclipse.jdt.core.prefs
+|       org.eclipse.m2e.core.prefs
+|       org.springframework.ide.eclipse.prefs
+|       
++---src
+|   +---main
+|   |   +---java
+|   |   |   \---br
+|   |   |       \---com
+|   |   |           \---escola
+|   |   |               \---academic
+|   |   |                   |   AcademicApplication.java
+|   |   |                   |   
+|   |   |                   +---adapter
+|   |   |                   |   +---in
+|   |   |                   |   |   \---web
+|   |   |                   |   |       |   MatriculaController.java
+|   |   |                   |   |       |   
+|   |   |                   |   |       \---exception
+|   |   |                   |   |               ErrorResponse.java
+|   |   |                   |   |               GlobalExceptionHandler.java
+|   |   |                   |   |               
+|   |   |                   |   \---out
+|   |   |                   |       \---persistence
+|   |   |                   |           |   MatriculaRepositoryAdapter.java
+|   |   |                   |           |   PeriodoLetivoRepositoryAdapter.java
+|   |   |                   |           |   TurmaRepositoryAdapter.java
+|   |   |                   |           |   
+|   |   |                   |           +---entity
+|   |   |                   |           |       MatriculaEntity.java
+|   |   |                   |           |       PeriodoLetivoEntity.java
+|   |   |                   |           |       TurmaEntity.java
+|   |   |                   |           |       
+|   |   |                   |           +---mapper
+|   |   |                   |           |       MatriculaMapper.java
+|   |   |                   |           |       
+|   |   |                   |           \---repository
+|   |   |                   |                   SpringDataMatriculaRepository.java
+|   |   |                   |                   SpringDataPeriodoLetivoRepository.java
+|   |   |                   |                   SpringDataTurmaRepository.java
+|   |   |                   |                   
+|   |   |                   +---application
+|   |   |                   |   +---dto
+|   |   |                   |   |       MatriculaRequest.java
+|   |   |                   |   |       
+|   |   |                   |   +---exception
+|   |   |                   |   |       AlunoJaMatriculadoException.java
+|   |   |                   |   |       
+|   |   |                   |   +---port
+|   |   |                   |   |   +---in
+|   |   |                   |   |   |       MatricularAlunoUseCase.java
+|   |   |                   |   |   |       
+|   |   |                   |   |   \---out
+|   |   |                   |   |           MatriculaRepositoryPort.java
+|   |   |                   |   |           PeriodoLetivoRepositoryPort.java
+|   |   |                   |   |           TurmaRepositoryPort.java
+|   |   |                   |   |           
+|   |   |                   |   \---service
+|   |   |                   |           MatricularAlunoService.java
+|   |   |                   |           
+|   |   |                   \---domain
+|   |   |                       +---exception
+|   |   |                       |       MatriculaDuplicadaException.java
+|   |   |                       |       PeriodoInvalidoException.java
+|   |   |                       |       PeriodoLetivoNaoEncontradoException.java
+|   |   |                       |       RegraDeNegocioException.java
+|   |   |                       |       TurmaCheiaException.java
+|   |   |                       |       TurmaLotadaException.java
+|   |   |                       |       
+|   |   |                       +---model
+|   |   |                       |       Aluno.java
+|   |   |                       |       Matricula.java
+|   |   |                       |       Turma.java
+|   |   |                       |       
+|   |   |                       \---service
+|   |   |                               MatriculaDomainService.java
+|   |   |                               
+|   |   \---resources
+|   |           application.yaml
+|   |           
+|   \---test
+|       \---java
+|           \---br
+|               \---com
+|                   \---escola
+|                       \---academic
+|                           \---academic_service
+|                                   AcademicApplicationTests.java
+|                                   
+\---target
+    |   academic-service-0.0.1-SNAPSHOT.jar
+    |   academic-service-0.0.1-SNAPSHOT.jar.original
+    |   jacoco.exec
