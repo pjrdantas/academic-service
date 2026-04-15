@@ -1,2 +1,2 @@
 # academic-service
-Modulo academico do Gestão escolar -inicial2
+Modulo academico do Gestão escolar -inicial
